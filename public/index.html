@@ -110,15 +110,15 @@ Please consider reviewing the applications of:
   <li>the team presenting after us (<a href="https://errandrunner.herokuapp.com/feedback.html">Team 18</a>)</li>
 </ul>
 
-    <!--<input type="checkbox" ng-model="hide_table" ng-init="hide_table=false"> Show submitted feedback.
+    <input type="checkbox" ng-model="hide_table" ng-init="hide_table=false"> Show submitted feedback.
     <table ng-show="hide_table" class="table table-striped">
       <thead>
         <tr>
-          <th class="hidden-xs">Edit</th>
+         <!-- <th class="hidden-xs">Edit</th>
           <th class="hidden-xs hidden-sm">UID</th>
           <th>First Name</th>
           <th class="hidden-xs">Last Name</th>
-          <th class="hidden-xs hidden-sm">Email</th>
+          <th class="hidden-xs hidden-sm">Email</th>-->
           <th>School</th>
           <th>Start</th>
           <th>Stop</th>
@@ -128,7 +128,7 @@ Please consider reviewing the applications of:
       </thead>
       <tbody>
         <tr ng-repeat="user in users">
-          <td class="hidden-xs">
+        <!--  <td class="hidden-xs">
             <button class="btn" ng-click="editFeedback(user.$id)">
               <span class="glyphicon glyphicon-pencil"></span>  Edit
             </button>
@@ -136,21 +136,21 @@ Please consider reviewing the applications of:
           <td class="hidden-xs hidden-sm">{{ user.uid }}</td>
           <td>{{ user.fName }}</td>
           <td class="hidden-xs">{{ user.lName }}</td>
-          <td class="hidden-xs hidden-sm">{{ user.email }}</td>
+          <td class="hidden-xs hidden-sm">{{ user.email }}</td>-->
           <td>{{ user.school }}</td>
           <td>{{ user.start }}</td>
           <td>{{ user.stop }}</td>
           <td>{{ user.continue }}</td>
           <td class="hidden-xs">{{ user.other }}</td>
         
-          <td class="hidden-xs">
+         <!-- <td class="hidden-xs">
             <button class="btn" ng-click="deleteFeedback($index)">
               <span class="glyphicon glyphicon-pencil"></span>  Delete
             </button>
-          </td>
+          </td>-->
         </tr>
       </tbody>
-    </table>-->
+    </table>
 </div>
 <script>
   var myApp = angular.module("myApp", ["firebase"]);
